@@ -1,0 +1,23 @@
+body {
+ height: calc(100% - 20px); /*define a altura do corpo como 100% da altura da janela de visualização menos 20px (10px de margem superior e inferior) */
+ margin: 10px; /* Define a altura do corpo como 100% da altura da janela de visualização menos 20px (10px de margem superior e inferior) */
+ display: grid; /* Define o layout como uma grade */
+ font-family: Arial; /* Define a fonte como Arial */
+ grid-template-rows: 40px 20px auto 20px; /* 40px para o cabeçalho, 20px para o menu superior, auto para o conteúdo principal e 20px para o rodapé */
+ grid-column-gap: 10px; /* Espaçamento entre as colunas */
+ grid-row-gap: 10px; /* Espaçamento entre as linhas */
+}
+h1 { margin: 0 }
+header, nav, aside, main, footer 
+{ border: 1px solid black; 
+text-align: center } /*as bordas de todos os elementos são definidas como 1px sólido preto e o texto é centralizado */
+header, nav:first-of-type, footer 
+{ grid-column-start: 1;
+ grid-column-end: 4; } /* O cabeçalho, o menu superior e o rodapé ocupam todas as colunas da grade */
+.produtos 
+{ display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;} /* Define o layout dos produtos como uma grade com colunas de largura mínima de 200px e largura máxima de 1fr (uma fração do espaço disponível) */
+.esquerda, .direita 
+{ border: 1px solid black ;
+     text-align: left} /* Define o layout dos produtos como uma grade com colunas de largura mínima de 150px e largura máxima de 1fr (uma fração do espaço disponível) */
