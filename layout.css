@@ -3,7 +3,7 @@ body {
     margin: 0;
     height: 100vh;  /* altura da tela */
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 200px auto;
     /* grid-template-rows: 100px auto 50px; */
     grid-template-rows: auto 1fr auto;
     font-family: "Arial", sans-serif;
@@ -61,4 +61,14 @@ h1 img {
     padding: 10px;
     justify-items: center;
     text-align: center;
+}
+
+nav {
+    background: rgb(158, 157, 157);
+    font-family: Arial;
+    text-align: left;
+    flex: 9;
+    flex-direction: column;   /* um item embaixo do outro */
+    justify-content: flex-start;
+
 }
