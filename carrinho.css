@@ -25,7 +25,7 @@
 .itemCarrinho img {
     width: 60px;
     height: 80px;
-    object-fit: contain; /* mantém a proporção da imagem */
+    object-fit: contain;
     display: flex;  
 }
 .tabelaCarrinho td:first-child { /* primeira coluna */

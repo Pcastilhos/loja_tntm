@@ -29,7 +29,7 @@ footer             { grid-area: footer; }
 header {
     margin: 0;
     flex-direction: column;
-    position: relative;   /* vira a referência para o filho absolute */
+    position: relative; 
     background-image: linear-gradient(to bottom, #a53622, #000000ad);
     border-top: none;
     border-bottom: none;
@@ -74,22 +74,22 @@ main {
 
 nav {
     
-    padding: 16px;
+    padding: 16px; 
 
 }
 nav > ul {
     list-style: none; 
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    gap: 50px;
+    gap: 50px; 
 }
 
 nav a {
     text-decoration: none; 
     color: #E1AD01;
-    text-transform: uppercase; /* deixa tudo maiúsculo */
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3em; 
 }
@@ -98,8 +98,12 @@ nav a,
 nav a:visited {
     color: #E1AD01;
     text-decoration: none;
-    -webkit-text-stroke: 1px #000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow:
+    -1px -1px 0 #000,   /* cima e esquerda */
+     1px -1px 0 #000,   /* cima e direita */
+    -1px  1px 0 #000,   /* baixo e esquerda */
+     1px  1px 0 #000,   /* baixo e direita */
+     2px  2px 4px rgba(0, 0, 0, 0.6);   
 }
 
 /* ========== DESTAQUES ========== */
@@ -107,21 +111,21 @@ nav a:visited {
 .produtos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 24px;
-    max-width: 1200px;
+    gap: 24px; 
+    padding: 24px; 
+    max-width: 1200px; 
     margin: 0 auto; /* centraliza o grid na página */
 }
 
 .produto {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     border: 1px solid gray;
     border-radius: 8px;
     padding: 12px;
-    box-shadow: 3px 3px 0 #2b2a2a; 
+    box-shadow: 3px 3px 0 #2b2a2a;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -139,8 +143,12 @@ nav a:visited {
     color: #E1AD01;
     text-decoration: none;
     font-size: 1.3em;
-    -webkit-text-stroke: 1px #000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow:
+    -1px -1px 0 #000,   /* cima e esquerda */
+     1px -1px 0 #000,   /* cima e direita */
+    -1px  1px 0 #000,   /* baixo e esquerda */
+     1px  1px 0 #000,   /* baixo e direita */
+     2px  2px 4px rgba(0, 0, 0, 0.6);   
 }
 
     .produto h4 {

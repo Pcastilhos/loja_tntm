@@ -11,8 +11,8 @@
 }
 
 .fotos {
-    position: relative;     /* faltava: prende as imagens dentro da caixa */
-    aspect-ratio: 1 / 1;    /* faltava: dá altura à caixa */
+    position: relative;    
+    aspect-ratio: 1 / 1;    
     max-width: 450px;
     width: 100%; 
     margin: 0 auto;
@@ -24,7 +24,10 @@
 
 .fotos img {
     position: absolute;
-    inset: 12px;                  /* faz o papel do padding */
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;         
     width: calc(100% - 24px);
     height: calc(100% - 24px);
     object-fit: contain;
@@ -61,19 +64,23 @@
 .ficha th,
 .ficha td {
     border: 1px solid gray;      /* linhas entre as células */
-    padding: 8px 16px; 
+    padding: 8px 16px; /* espaçamento interno das células */
 }
 
 .infoProduto h2 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     text-align: center;
     color: #E1AD01;
     text-decoration: none;
     font-size: 1.5em;
     font-family: 'Kanit', sans-serif;
-    -webkit-text-stroke: 1px #000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow:
+    -1px -1px 0 #000,   /* cima e esquerda */
+     1px -1px 0 #000,   /* cima e direita */
+    -1px  1px 0 #000,   /* baixo e esquerda */
+     1px  1px 0 #000,   /* baixo e direita */
+     2px  2px 4px rgba(0, 0, 0, 0.6);   
 }
 
 @media (max-width: 768px) {
