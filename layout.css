@@ -156,6 +156,7 @@ nav a:visited {
 footer {
     background: #111;
     text-align: center;
+    align-items: center;
     justify-content: center;
     border-top: 4px solid #E1AD01; /* faixa mostarda em cima */
     
@@ -168,6 +169,11 @@ footer {
     padding: 10px 0; /* espaçamento vertical */
 }
 
+.audio {
+    color-scheme: dark;
+    border-radius: 20px;
+
+}
 
 /* ========== RESPONSIVIDADE (MOBILE) ========== */
 
