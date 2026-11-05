@@ -46,9 +46,9 @@ h1 img {
 
 .iconecar {
     position: absolute; /* sai do fluxo normal */ 
-    bottom: 10px;       /* distância da base do header */
-    right: 20px;        /* distância da direita do header */
-    transition: transform .2s; /* animação suave da transformação */
+    bottom: 10px;       
+    right: 20px;
+    transition: transform .2s; /* transição suave da transformação */
 }
 
 .iconecar img {
@@ -166,7 +166,7 @@ footer {
     display: flex;            /* links e áudio lado a lado */
     align-items: center;      /* alinha os dois no meio, na vertical */
     justify-content: center;  /* centraliza o conjunto no rodapé */
-    gap: 300px;                /* espaço entre os links e o áudio */
+    column-gap: 300px;         /* espaço entre os links e o áudio */
     flex-wrap: wrap;          /* se não couber, o áudio desce para baixo */
     text-align: center;
     border-top: 4px solid #E1AD01; /* faixa mostarda em cima */
