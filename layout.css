@@ -81,7 +81,7 @@ header:hover .qrcode {
     }
     to {
         opacity: 1;
-        transform: translateX(0) rotate(0); /
+        transform: translateX(0) rotate(0);
     }
 }
 
@@ -238,14 +238,20 @@ footer {
     }
 
     .iconecar img {
-        width: 32px;
-        height: auto;
+        width: 32px; 
+        height: auto; /
     }
 
     /* menu vira uma faixa horizontal que quebra linha */
     .menu {
         padding: 12px;
     }
+
+    @media (hover: none) {
+    .qrcode {
+        display: none;
+    }
+}
 
     .menu > ul {
         flex-direction: row;
