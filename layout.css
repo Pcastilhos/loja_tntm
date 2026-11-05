@@ -155,11 +155,13 @@ nav a:visited {
 
 footer {
     background: #111;
+    display: flex;            /* links e áudio lado a lado */
+    align-items: center;      /* alinha os dois no meio, na vertical */
+    justify-content: center;  /* centraliza o conjunto no rodapé */
+    gap: 300px;                /* espaço entre os links e o áudio */
+    flex-wrap: wrap;          /* se não couber, o áudio desce para baixo */
     text-align: center;
-    align-items: center;
-    justify-content: center;
     border-top: 4px solid #E1AD01; /* faixa mostarda em cima */
-    
 }
 
 .linksRodape {
@@ -172,7 +174,12 @@ footer {
 .audio {
     color-scheme: dark;
     border-radius: 20px;
+    margin: 10px 0;
+}
 
+.audio audio {
+    width: 200px;
+    height: 30px;
 }
 
 /* ========== RESPONSIVIDADE (MOBILE) ========== */
