@@ -60,6 +60,31 @@ h1 img {
     transform: scale(1.1);
 }
 
+/* ========== QR CODE COM LINK ========== */
+.qrcode {
+    position: absolute;
+    left: 20%; 
+    bottom: 10px;
+    width: 120px;
+    height: auto;
+    opacity: 0;       
+}
+
+header:hover .qrcode {
+    animation: rolar 0.8s ease-out forwards;
+}
+
+@keyframes rolar {
+    from {
+        opacity: 0;
+        transform: translateX(-200px) rotate(-360deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0); /
+    }
+}
+
 /* ========== MENU E DESTAQUES ========== */
 nav , main {
     border: 1px solid black;
