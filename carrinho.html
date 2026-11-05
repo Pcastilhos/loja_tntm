@@ -2,9 +2,107 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>carrinho</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho | TNTM</title>
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="carrinho.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        CONTEÚDO DO SITE
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img src="banner_tntm_2.webp" alt="TNTM - Tu não é todo mundo" width="1200" height="200">
+                </a>
+            </h1>
+            <a class="iconecar" href="carrinho.html"><img src="carrinho.svg" height="40" width="40" alt="Carrinho de compras"></a>
+        </header>
+
+        <!-- menu lateral -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Bonés</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Botons</a></li>
+                <li><a href="#">Personalizados</a></li>
+            </ul>
+        </nav>
+
+        <!-- carrinho de compras -->
+        <main>
+            <section class="carrinho">
+                <h2>Seu carrinho</h2>
+
+                <!-- a div permite rolar a tabela para o lado no celular -->
+                <div class="tabelaCarrinho">
+                    <table class="tabelaCarrinho">
+                        <caption>Produtos no carrinho</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Valor unitário</th>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="itemCarrinho" href="produto1.html">
+                                        <img src="camiseta-vermelha.webp" alt="" width="80" height="80">
+                                        <p>Camiseta ERRO<br><small>Vermelha · Tamanho M</small></p>
+                                    </a>
+                                </td>
+                                <td>R$ 100,00</td>
+                                <td>2</td>
+                                <td>R$ 200,00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="itemCarrinho" href="produto2.html">
+                                        <img src="bone-vermelho.webp" alt="" width="60" height="80">
+                                        <p>Boné ERRO<br><small>Vermelho · Tamanho único</small></p>
+                                    </a>
+                                </td>
+                                <td>R$ 50,00</td>
+                                <td>1</td>
+                                <td>R$ 50,00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row" colspan="3">Subtotal (3 itens)</th>
+                                <td>R$ 250,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">Frete</th>
+                                <td>Grátis</td>
+                            </tr>
+                            <tr class="linhaTotal">
+                                <th scope="row" colspan="3">Total</th>
+                                <td>R$ 250,00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="acoesCarrinho">
+                    <a class="voltar" href="index.html">← Continuar comprando</a><br><br><br>
+                    <a class="botaoComprar" href="#">Finalizar compra</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav class="linksRodape">
+                <a href="#">Contato</a>
+                <a href="#">Sobre</a>
+                <a href="#">Redes sociais</a>
+            </nav>
+        </footer>
     </body>
 </html>

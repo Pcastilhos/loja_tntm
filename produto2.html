@@ -2,9 +2,89 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>produto2</title>
+        <title>Boné ERRO - Vermelho | TNTM</title>
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="desc-produto.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        CONTEÚDO DO SITE
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img src="banner_tntm_2.webp" alt="TNTM - Tu não é todo mundo" width="1200" height="200">
+                </a>
+            </h1>
+            <a class="iconecar" href="carrinho.html"><img src="carrinho.svg" height="40" width="40" alt="Carrinho de compras"></a>
+        </header>
+
+        <!-- menu lateral -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Bonés</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Botons</a></li>
+                <li><a href="#">Personalizados</a></li>
+            </ul>
+        </nav>
+
+        <!-- detalhe do produto -->
+        <main>
+            <section class="detalhes">
+                <!-- duas imagens que alternam com animação -->
+                <div class="fotos">
+                    <img src="bone-vermelho.webp" alt="Boné ERRO vermelho, frente">
+                    <img src="bone-vermelho.webp" alt="Boné ERRO vermelho, outro ângulo" style="transform: scaleX(-1);">
+                </div>
+
+                <div class="infoProduto">
+                    <h2>Boné ERRO</h2>
+                    <p class="cor">Vermelho</p>
+                    <p class="precoDetalhe">R$ 50,00</p>
+
+                    <p class="descricao">
+                        Boné com a frase "Não consegui reproduzir o ERRO" na frente.
+                        Ideal para usar na reunião de incidente.
+                    </p>
+
+                    <table class="ficha">
+                        <caption>Ficha técnica</caption>
+                        <tr>
+                            <th scope="row">Material</th>
+                            <td>Sarja de algodão</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tamanho</th>
+                            <td>Único, com regulagem</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cor</th>
+                            <td>Vermelho</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Estampa</th>
+                            <td>Silk frontal</td>
+                        </tr>
+                    </table>
+
+                    <a class="botaoComprar" href="carrinho.html">Adicionar ao carrinho</a><br><br><br>
+                    <a class="voltar" href="index.html">← Voltar para a loja</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav class="linksRodape">
+                <a href="#">Contato</a>
+                <a href="#">Sobre</a>
+                <a href="#">Redes sociais</a>
+            </nav>
+        </footer>
     </body>
 </html>

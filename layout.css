@@ -138,9 +138,9 @@ nav a:visited {
     min-height: 1.4em;
     color: #E1AD01;
     text-decoration: none;
+    font-size: 1.3em;
     -webkit-text-stroke: 1px #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-size: 1.3em; 
 }
 
     .produto h4 {

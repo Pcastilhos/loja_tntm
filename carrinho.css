@@ -1,0 +1,33 @@
+.carrinho {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+ 
+.tabelaCarrinho {
+    overflow-x: auto;   /* no celular a tabela rola para o lado */
+}
+ 
+.tabelaCarrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+ 
+.tabelaCarrinho th,
+.tabelaCarrinho td {
+    border: 1px solid gray;
+    padding: 8px;
+}
+ 
+.itemCarrinho img {
+    width: 60px;
+    height: 80px;
+    object-fit: contain; /* mantém a proporção da imagem */
+    display: flex;  
+}
+.tabelaCarrinho td:first-child { /* primeira coluna */
+    text-align: left; /* alinha à esquerda o texto  */
+}

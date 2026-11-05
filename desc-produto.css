@@ -1,0 +1,84 @@
+.detalhes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza o grid na página */
+    text-align: center;
+    font-family: sans-serif;
+     
+}
+
+.fotos {
+    position: relative;     /* faltava: prende as imagens dentro da caixa */
+    aspect-ratio: 1 / 1;    /* faltava: dá altura à caixa */
+    max-width: 450px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 #2b2a2a;
+
+}
+
+.fotos img {
+    position: absolute;
+    inset: 12px;                  /* faz o papel do padding */
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    object-fit: contain;
+    transition: opacity 0.4s;
+
+}
+
+.fotos img + img {
+    opacity: 0;
+}
+
+.fotos:hover img + img {
+    opacity: 1;
+}
+
+.fotos:hover img:first-child {
+    opacity: 0;
+}
+
+.descricao {
+    font-size: 1.3em;
+    text-align: justify;   /* justifica o texto */
+    line-height: 1.5;      /* espaço entre as linhas */
+    margin: 32px 0;        /* afasta de cima e de baixo */
+}
+
+.infoProduto .ficha {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    margin-bottom: 32px;
+}
+
+.ficha th,
+.ficha td {
+    border: 1px solid gray;      /* linhas entre as células */
+    padding: 8px 16px; 
+}
+
+.infoProduto h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #E1AD01;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .detalhes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 16px;
+    }
+}
