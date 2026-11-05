@@ -14,6 +14,7 @@
     position: relative;     /* faltava: prende as imagens dentro da caixa */
     aspect-ratio: 1 / 1;    /* faltava: dá altura à caixa */
     max-width: 450px;
+    width: 100%; 
     margin: 0 auto;
     border: 1px solid gray;
     border-radius: 8px;
